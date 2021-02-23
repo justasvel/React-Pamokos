@@ -26,15 +26,19 @@ export default class App extends React.Component {
     return status ? "Done" : "Mark as done";
   };
 
-  clicked = (item) => {
-    console.log(this.state.list[item.id].taskContent);
+  clicked = (index) => {
+    if (this.state.list[index].status == true) {
+      this.state.list[index].status = false;
+    } else {
+      this.state.list[index].status = true;
+    }
   };
 
   render() {
     return (
       <div className="container">
         <div className="row">
-          {this.state.list.map((item) => {
+          {this.state.list.map((item, index) => {
             return (
               <div
                 className="card m-2"
@@ -47,7 +51,7 @@ export default class App extends React.Component {
                   <a
                     href="#"
                     className="btn btn-danger"
-                    onClick={() => this.clicked(item)}
+                    onClick={() => this.clicked(index)}
                   >
                     {this.btnText(item.status)}
                   </a>
