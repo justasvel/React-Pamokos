@@ -27,7 +27,7 @@ export default class App extends React.Component {
   };
 
   clicked = (index) => {
-    if (this.state.list[index].status == true) {
+    if (this.state.list[index].status) {
       this.state.list[index].status = false;
     } else {
       this.state.list[index].status = true;
