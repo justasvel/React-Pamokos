@@ -1,4 +1,6 @@
 import React from "react";
+import { FaTrash } from 'react-icons/fa';
+import { FaEdit } from 'react-icons/fa';
 
 export default function List(props) {
   return (
@@ -18,13 +20,13 @@ export default function List(props) {
                     props.removeUser(user.id);
                   }}
                 >
-                  Delete
+                <FaTrash />
                 </button>
                 <button
                   className="btn btn-info mx-3"
                   onClick={() => props.editUser(user)}
                 >
-                  Edit
+                  <FaEdit />
                 </button>
               </div>
             </li>

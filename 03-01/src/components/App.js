@@ -11,11 +11,22 @@ export default class App extends React.Component {
       email: "",
       btn: "Submit",
       updateId: "",
+      btnStatus: ''
     };
+  }
+
+  checkEmptyInputs = () => {
+    if(this.state.name === '' || this.state.email === '') {
+      this.setState({ btnStatus: '' });
+    } else {
+      this.setState({ btnStatus: 'notEmpty' });
+    }
   }
 
   handleChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
+
+    this.checkEmptyInputs();
   };
 
   formHandler = (event) => {
@@ -35,6 +46,7 @@ export default class App extends React.Component {
         users: data,
         name: "",
         email: "",
+        btnStatus: ''
       });
     } else if (this.state.btn === "Edit") {
       const index = this.state.users.findIndex(
@@ -49,8 +61,10 @@ export default class App extends React.Component {
         name: "",
         email: "",
         btn: "Submit",
+        btnStatus: ''
       });
     }
+
   };
 
   removeListItem = (id) => {
@@ -95,6 +109,7 @@ export default class App extends React.Component {
             type="submit"
             value={this.state.btn}
             className="btn btn-primary my-3"
+            disabled={!this.state.btnStatus}
           />
         </form>
         <List
