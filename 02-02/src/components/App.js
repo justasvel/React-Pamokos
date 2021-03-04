@@ -6,39 +6,106 @@ export default class App extends React.Component {
 
     this.state = {
       list: [
-        { id: 1, status: false, taskContent: "Lorem ipsum 1" },
-        { id: 2, status: false, taskContent: "Lorem ipsum 2" },
-        { id: 3, status: false, taskContent: "Lorem ipsum 3" },
-        { id: 4, status: false, taskContent: "Lorem ipsum 4" },
-        { id: 5, status: false, taskContent: "Lorem ipsum 5" },
-        { id: 6, status: false, taskContent: "Lorem ipsum 6" },
-        { id: 7, status: false, taskContent: "Lorem ipsum 7" },
-        { id: 8, status: false, taskContent: "Lorem ipsum 8" },
+        {
+          id: 1,
+          status: false,
+          taskContent: "Lorem ipsum 1",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 2,
+          status: false,
+          taskContent: "Lorem ipsum 2",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 3,
+          status: false,
+          taskContent: "Lorem ipsum 3",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 4,
+          status: false,
+          taskContent: "Lorem ipsum 4",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 5,
+          status: false,
+          taskContent: "Lorem ipsum 5",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 6,
+          status: false,
+          taskContent: "Lorem ipsum 6",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 7,
+          status: false,
+          taskContent: "Lorem ipsum 7",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
+        {
+          id: 8,
+          status: false,
+          taskContent: "Lorem ipsum 8",
+          btn: "Mark as done",
+          header: "This task is not done",
+          class: "btn btn-danger",
+        },
       ],
     };
   }
 
-  taskTitle = (item) => {
-    return item.status ? "Task is done" : "Task is not done";
-  };
+  markAsDone = (id) => {
+    this.setState({
+      list: this.state.list.map((item) => {
+        if (item.id === id) {
+          if (item.status === false) {
+            item.status = true;
+            item.btn = "Done";
+            item.header = "This task is done";
+            item.class = "btn btn-success";
+          } else if (item.status === true) {
+            item.status = false;
+            item.btn = "Mark as done";
+            item.header = "This task is not done";
+            item.class = "btn btn-danger";
+          }
+        } else {
+          item.status = item.status;
+          item.btn = item.btn;
+          item.header = item.header;
+          item.class = item.class;
+        }
 
-  btnText = (status) => {
-    return status ? "Done" : "Mark as done";
-  };
-
-  clicked = (index) => {
-    if (this.state.list[index].status) {
-      this.state.list[index].status = false;
-    } else {
-      this.state.list[index].status = true;
-    }
+        return item;
+      }),
+    });
   };
 
   render() {
     return (
       <div className="container">
         <div className="row">
-          {this.state.list.map((item, index) => {
+          {this.state.list.map((item) => {
             return (
               <div
                 className="card m-2"
@@ -46,14 +113,14 @@ export default class App extends React.Component {
                 key={item.id}
               >
                 <div className="card-body">
-                  <h5 className="card-title">{this.taskTitle(item)}</h5>
+                  <h5 className="card-title">{item.header}</h5>
                   <p className="card-text">{item.taskContent}</p>
                   <a
                     href="#"
-                    className="btn btn-danger"
-                    onClick={() => this.clicked(index)}
+                    className={item.class}
+                    onClick={() => this.markAsDone(item.id)}
                   >
-                    {this.btnText(item.status)}
+                    {item.btn}
                   </a>
                 </div>
               </div>
