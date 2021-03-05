@@ -29,7 +29,6 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="conntainer">
           <div className="row justify-content-center">
             <div class="card mt-5">
               <img src="https://miro.medium.com/max/1200/1*hm7aE3BdUfUWUgBYK1GiZA.jpeg" className="card-img-top" alt="..." />
@@ -50,7 +49,6 @@ export default class App extends React.Component {
               </div>
             </div>
           </div>
-        </div>
       </div>
     );
   }
