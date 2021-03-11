@@ -1,45 +1,45 @@
 [
     {
         "id": 1,
-        "pavadinimas": "Obuolys",
-        "aprasymas": "Geriausi obuoliai visam Vilniuje",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 0.99,
-        "kategorija": "vaisiai",
+        "kategorija": "TFUEL",
         "img": "https://images.unsplash.com/photo-1611095786283-c2f965646ef1?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
     }, {
         "id": 2,
-        "pavadinimas": "Kriause",
-        "aprasymas": "Kriauses is tolimiausiu krastu kiekvieno skoniui",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 1.29,
-        "kategorija": "vaisiai",
-        "img": "https://images.unsplash.com/photo-1612831819448-f6cae53d3dcf?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        "kategorija": "TFUEL",
+        "img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
     }, {
         "id": 3,
-        "pavadinimas": "Plytos",
-        "aprasymas": "Tokiu plytu dar neteko matyti, reik tik 2 plytu pastatyti visam namui",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 0.99,
-        "kategorija": "statybine medziaga",
-        "img": "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        "kategorija": "TFUEL",
+        "img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
     },  {
         "id": 4,
-        "pavadinimas": "Coca-cola",
-        "aprasymas": "Gerimas is senoves romenu laiku. Suteikia dievisku jegu ir pilnatves jausmo",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 1.39,
-        "kategorija": "gerimai",
-        "img": "https://images.unsplash.com/photo-1613643043796-a370ee99ecbe?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        "kategorija": "TFUEL",
+        "img": "https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80"
     },  {
         "id": 5,
-        "pavadinimas": "Lasisa",
-        "aprasymas": "Is kur daugiau jei ne is norvegijos krantu, paciu lietuviu rankom sugauta",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 14.99,
-        "kategorija": "zuvis",
-        "img": "https://images.unsplash.com/photo-1613568762462-915fa1e89504?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        "kategorija": "TFUEL",
+        "img": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },  {
         "id": 6,
-        "pavadinimas": "Lekste",
-        "aprasymas": "Ir porecelianines ir paprastos, ir su rastais, ir be rastu. Taciau visos is Kinijos",
+        "pavadinimas": "THETA",
+        "aprasymas": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
         "kaina": 2.99,
-        "kategorija": "indai",
-        "img": "https://images.unsplash.com/photo-1612831818795-bf68e721cfa0?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        "kategorija": "TFUEL",
+        "img": "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     }
 ]

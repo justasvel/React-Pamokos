@@ -24,7 +24,7 @@ export default class Home extends Component {
             inventore exercitationem corrupti. Neque vitae quis ipsa.
           </p>
           <div className="row my-5">
-            {data.map(({ pavadinimas, aprasymas, kaina, kategorija, img }) => {
+            {data.map(({ id, pavadinimas, aprasymas, kaina, kategorija, img }) => {
               return (
                 <Card
                   pavadinimas={pavadinimas}
@@ -32,6 +32,7 @@ export default class Home extends Component {
                   kaina={kaina}
                   kategorija={kategorija}
                   img={img}
+                  key={id}
                 />
               );
             })}
