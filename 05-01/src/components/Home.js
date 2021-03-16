@@ -1,28 +1,31 @@
 import React, { useState, useEffect } from 'react';
-import Character from './Character';
+import Beer from './Beer';
 import axios from 'axios';
+import Loader from './Loader';
 
 const Home = () => {
 
-    const [ characters, setCharacters ] = useState([]);
+    const [ characters, setBeers ] = useState([]);
+    const [ loading, setLoading ] = useState(false);
 
     useEffect( () => {
 
-        const fetchCharacters = async () => {
-
+        const fetchBeers = async () => {
             const result = await axios('https://api.punkapi.com/v2/beers');
-            setCharacters(result.data);
-            console.log(result.data);
+            setBeers(result.data);;
+            setLoading(true);
         }
 
-        fetchCharacters();
+        fetchBeers();
     }, []);
 
-    return (
+    return loading ? (
         <div className="row">
-            {characters.map(({ char_id, name, nickname }) => <Character characterName={name} nickname={nickname} key={char_id}/>)}
+            {characters.map(({ id, name, image_url, tagline, description, food_pairing }) => {
+                return <Beer name={name} img={image_url} tagline={tagline} desc={description} food={food_pairing} id={id} key={id}/>
+            })}
         </div>
-    )
+    ) : (<Loader />)
 }
 
 export default Home;

@@ -36,3 +36,52 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom Styles */
+
+/* Card Styles */
+
+.card {
+  width: 20rem;
+  height: auto;
+}
+
+.image-card {
+  width: 5rem;
+}
+
+.button-primary {
+  border: none;
+  outline: none;
+  background: rgb(46, 130, 94);
+  color: white;
+  padding: 5px 15px;
+}
+
+.button-primary:hover {
+  background: rgb(39, 83, 64);
+}
+
+/* Beer Info Styles */
+
+.image-container {
+  width: 70px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.food-list {
+  list-style-type: none;
+}
+
+/* Spinner Style */
+
+.loader {
+  font-size: 50px;
+  color: rgb(46, 130, 94);
+}
