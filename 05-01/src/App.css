@@ -39,11 +39,44 @@
 
 /* Custom Styles */
 
+body {
+  font-family: 'Underdog', cursive;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 170px;
+}
+
+.footer-basic {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Navigation */
+
+.navbar {
+  background: rgb(46, 130, 94);
+}
+
+.navbar-nav {
+  color: rgb(197, 135, 21);
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+
 /* Card Styles */
 
 .card {
   width: 20rem;
   height: auto;
+  border-radius: 0;
 }
 
 .image-card {
@@ -79,9 +112,60 @@
   list-style-type: none;
 }
 
+/* About styles */
+
+.about-img-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+}
+
 /* Spinner Style */
 
 .loader {
   font-size: 50px;
   color: rgb(46, 130, 94);
+}
+
+/* Footer styles */
+
+.footer-basic {
+  padding:40px 0;
+  background-color:rgb(46, 130, 94);
+  color:rgb(226, 219, 219);
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
