@@ -124,6 +124,11 @@ body {
   height: auto;
 }
 
+.date {
+  font-size: 12px;
+  font-style: italic;
+}
+
 /* Spinner Style */
 
 .loader {
