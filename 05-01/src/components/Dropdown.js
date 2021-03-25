@@ -7,7 +7,6 @@ const BeerDropdown = ({getQuery}) => {
     const toggle = () => setDropdownOpen(prevState => !prevState);
 
     const handleSelect = (e) => {
-        console.log(e.target.innerText);
         getQuery(e.target.innerText);
     }
 
